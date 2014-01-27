@@ -2837,4 +2837,455 @@ asciiText () {
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
 			startline="1"
-			fulloutput=("${c
+			fulloutput=("${c1}.............."
+"${c1}            ..,;:ccc,.                           %s"
+"${c1}          ......''';lxO.                        %s"
+"${c1}.....''''..........,:ld;                        %s"
+"${c1}           .';;;:::;,,.x,                       %s"
+"${c1}      ..'''.            0Xxoc:,.  ...           %s"
+"${c1}  ....                ,ONkc;,;cokOdc',.         %s"
+"${c1} .                   OMo           ':"${c2}"dd"${c1}"o.       %s"
+"${c1}                    dMc               :OO;      %s"
+"${c1}                    0M.                 .:o.    %s"
+"${c1}                    ;Wd                         %s"
+"${c1}                     ;XO,                       %s"
+"${c1}                       ,d0Odlc;,..              %s"
+"${c1}                           ..',;:cdOOd::,.      %s"
+"${c1}                                    .:d;.':;.   %s"
+"${c1}                                       'd,  .'  %s"
+"${c1}                                         ;l   ..%s"
+"${c1}                                          .o    %s"
+"${c1}                                            c   %s"
+"${c1}                                            .'"
+"${c1}                                             .")
+		;;
+		
+		"Kali Linux")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light blue') # White
+				c2=$(getColor 'black') # Light Red
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="1"
+			fulloutput=("${c1}.............."
+"${c1}            ..,;:ccc,.                           %s"
+"${c1}          ......''';lxO.                        %s"
+"${c1}.....''''..........,:ld;                        %s"
+"${c1}           .';;;:::;,,.x,                       %s"
+"${c1}      ..'''.            0Xxoc:,.  ...           %s"
+"${c1}  ....                ,ONkc;,;cokOdc',.         %s"
+"${c1} .                   OMo           ':"${c2}"dd"${c1}"o.       %s"
+"${c1}                    dMc               :OO;      %s"
+"${c1}                    0M.                 .:o.    %s"
+"${c1}                    ;Wd                         %s"
+"${c1}                     ;XO,                       %s"
+"${c1}                       ,d0Odlc;,..              %s"
+"${c1}                           ..',;:cdOOd::,.      %s"
+"${c1}                                    .:d;.':;.   %s"
+"${c1}                                       'd,  .'  %s"
+"${c1}                                         ;l   ..%s"
+"${c1}                                          .o    %s"
+"${c1}                                            c   %s"
+"${c1}                                            .'"
+"${c1}                                             .")
+		;;
+
+                "Sabayon")
+                        if [[ "$no_color" != "1" ]]; then
+                                c1=$(getColor 'white') # White
+				c2=$(getColor 'light blue') # Blue
+                        fi
+                        if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+                        startline="0"
+                        fulloutput=("${c2}            ...........                %s"
+"${c2}         ..             ..            %s"
+"${c2}      ..                   ..         %s"
+"${c2}    ..           ${c1}o           ${c2}..       %s"
+"${c2}  ..            ${c1}:W'            ${c2}..     %s"
+"${c2} ..             ${c1}.d.             ${c2}..    %s"
+"${c2}:.             ${c1}.KNO              ${c2}.:   %s"
+"${c2}:.             ${c1}cNNN.             ${c2}.:   %s"
+"${c2}:              ${c1}dXXX,              ${c2}:   %s"
+"${c2}:   ${c1}.          dXXX,       .cd,   ${c2}:   %s"
+"${c2}:   ${c1}'kc ..     dKKK.    ,ll;:'    ${c2}:   %s"
+"${c2}:     ${c1}.xkkxc;..dkkkc',cxkkl       ${c2}:   %s"
+"${c2}:.     ${c1}.,cdddddddddddddo:.       ${c2}.:   %s"
+"${c2} ..         ${c1}:lllllll:           ${c2}..    %s"
+"${c2}   ..         ${c1}',,,,,          ${c2}..      %s"
+"${c2}     ..                     ..        %s"
+"${c2}        ..               ..           %s"
+"${c2}          ...............             %s")
+                ;;
+
+                "CentOS")
+                        if [[ "$no_color" != "1" ]]; then
+                                c1=$(getColor 'yellow') # White
+                                c2=$(getColor 'light green') # White
+                                c3=$(getColor 'light blue') # White
+                                c4=$(getColor 'light purple') # White
+                                c5=$(getColor 'white') # White
+                        fi
+                        if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+                        startline="0"
+                        fulloutput=("${c1}                   ..                    %s"
+"${c1}                 .PLTJ.                 %s"
+"${c1}                <><><><>                %s"
+"       ${c2}KKSSV' 4KKK ${c1}LJ${c4} KKKL.'VSSKK       %s"
+"       ${c2}KKV' 4KKKKK ${c1}LJ${c4} KKKKAL 'VKK       %s"
+"       ${c2}V' ' 'VKKKK ${c1}LJ${c4} KKKKV' ' 'V       %s"
+"       ${c2}.4MA.' 'VKK ${c1}LJ${c4} KKV' '.4Mb.       %s"
+"${c4}     . ${c2}KKKKKA.' 'V ${c1}LJ${c4} V' '.4KKKKK ${c3}.     %s"
+"${c4}   .4D ${c2}KKKKKKKA.'' ${c1}LJ${c4} ''.4KKKKKKK ${c3}FA.   %s"
+"${c4}  <QDD ++++++++++++  ${c3}++++++++++++ GFD>  %s"
+"${c4}   'VD ${c3}KKKKKKKK'.. ${c2}LJ ${c1}..'KKKKKKKK ${c3}FV    %s"
+"${c4}     ' ${c3}VKKKKK'. .4 ${c2}LJ ${c1}K. .'KKKKKV ${c3}'     %s"
+"       ${c3} 'VK'. .4KK ${c2}LJ ${c1}KKA. .'KV'        %s"
+"       ${c3}A. . .4KKKK ${c2}LJ ${c1}KKKKA. . .4       %s"
+"       ${c3}KKA. 'KKKKK ${c2}LJ ${c1}KKKKK' .4KK       %s"
+"       ${c3}KKSSA. VKKK ${c2}LJ ${c1}KKKV .4SSKK       %s"
+"${c2}                <><><><>                 %s"
+"${c2}                 'MKKM'                  %s"
+"${c2}                   ''")
+		;;
+
+
+		"Jiyuu Linux")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light blue') # Light Blue
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			startline="0"
+			fulloutput=("${c1}+++++++++++++++++++++++.        %s"
+"${c1}ss:-......-+so/:----.os-       %s"
+"${c1}ss        +s/        os-       %s"
+"${c1}ss       :s+         os-       %s"
+"${c1}ss       os.         os-       %s"
+"${c1}ss      .so          os-       %s"
+"${c1}ss      :s+          os-       %s"
+"${c1}ss      /s/          os-       %s"
+"${c1}ss      /s:          os-       %s"
+"${c1}ss      +s-          os-       %s"
+"${c1}ss-.....os:..........os-       %s"
+"${c1}++++++++os+++++++++oooo.       %s"
+"${c1}        os.     ./oo/.         %s"
+"${c1}        os.   ./oo:            %s"
+"${c1}        os. ./oo:              %s"
+"${c1}        os oo+-                %s"
+"${c1}        os+-                   %s"
+"${c1}        /.                     %s")
+		;;
+
+
+		*)
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'white') # White
+				c2=$(getColor 'dark grey') # Light Gray
+				c3=$(getColor 'yellow') # Light Yellow
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; c3="${my_lcolor}"; fi
+			startline="0"
+			fulloutput=("                             %s"
+"                            %s"
+"                            %s"
+"$c2         #####$c0              %s"
+"$c2        #######             %s"
+"$c2        ##"$c1"O$c2#"$c1"O$c2##             %s"
+"$c2        #$c3#####$c2#             %s"
+"$c2      ##$c1##$c3###$c1##$c2##           %s"
+"$c2     #$c1##########$c2##          %s"
+"$c2    #$c1############$c2##         %s"
+"$c2    #$c1############$c2###        %s"
+"$c3   ##$c2#$c1###########$c2##$c3#        %s"
+"$c3 ######$c2#$c1#######$c2#$c3######      %s"
+"$c3 #######$c2#$c1#####$c2#$c3#######      %s"
+"$c3   #####$c2#######$c3#####        %s"
+"                            %s"
+"                            %s"
+"                            %s")
+  		;;
+	esac
+
+
+	# Truncate lines based on terminal width.
+	if [ "$truncateSet" == "Yes" ]; then
+		for ((i=0; i<${#fulloutput[@]}; i++)); do
+			my_out=$(printf "${fulloutput[i]}$c0\n" "${out_array}")
+			my_out_full=$(echo "$my_out" | cat -v)
+			termWidth=$(tput cols)
+			SHOPT_EXTGLOB_STATE=$(shopt -p extglob)
+			read SHOPT_CMD SHOPT_STATE SHOPT_OPT <<< ${SHOPT_EXTGLOB_STATE}
+			if [[ ${SHOPT_STATE} == "-u" ]]; then
+				shopt -s extglob
+			fi
+
+			stringReal="${my_out_full//\^\[\[@([0-9]|[0-9];[0-9][0-9])m}"
+
+			if [[ ${SHOPT_STATE} == "-u" ]]; then
+				shopt -u extglob
+			fi
+
+			if [[ "${#stringReal}" -le "${termWidth}" ]]; then
+				echo -e "${my_out}"$c0
+			elif [[ "${#stringReal}" -gt "${termWidth}" ]]; then
+				((NORMAL_CHAR_COUNT=0))
+				for ((j=0; j<=${#my_out_full}; j++)); do
+					if [[ "${my_out_full:${j}:3}" == '^[[' ]]; then
+						if [[ "${my_out_full:${j}:5}" =~ ^\^\[\[[[:digit:]]m$ ]]; then
+							if [[ ${j} -eq 0 ]]; then
+								j=$((${j} + 5))
+							else
+								j=$((${j} + 4))
+							fi
+						elif [[ "${my_out_full:${j}:8}" =~ ^\^\[\[[[:digit:]]\;[[:digit:]][[:digit:]]m ]]; then
+							if [[ ${j} -eq 0 ]]; then
+								j=$((${j} + 8))
+							else
+								j=$((${j} + 7))
+							fi
+						fi
+					else
+						((NORMAL_CHAR_COUNT++))
+						if [[ ${NORMAL_CHAR_COUNT} -ge ${termWidth} ]]; then
+							echo -e "${my_out:0:$((${j} - 5))}"$c0
+							break 1
+						fi
+					fi
+				done
+			fi
+
+			if [[ "$i" -ge "$startline" ]]; then
+				unset out_array[0]
+				out_array=( "${out_array[@]}" )
+			fi
+		done
+	else
+		#n=${#fulloutput[*]}
+		for ((i=0; i<${#fulloutput[*]}; i++)); do
+			# echo "${out_array[@]}"
+			printf "${fulloutput[i]}$c0\n" "${out_array}"
+			if [[ "$i" -ge "$startline" ]]; then
+				unset out_array[0]
+				out_array=( "${out_array[@]}" )
+			fi
+		done
+	fi
+	# Done with ASCII output
+}
+
+infoDisplay () {
+	textcolor="\033[0m"
+	[[ "$my_hcolor" ]] && textcolor="${my_hcolor}"
+	#TODO: Centralize colors and use them across the board so we only change them one place.
+	myascii="${distro}"
+	[[ "${asc_distro}" ]] && myascii="${asc_distro}"
+	case ${myascii} in
+		"Arch Linux - Old"|"Fedora"|"Mandriva"|"Mandrake"|"Chakra"|"Sabayon"|"Slackware"|"Mac OS X"|"Trisquel"|"Kali Linux"|"Jiyuu Linux") labelcolor=$(getColor 'light blue');;
+		"Arch Linux"|"Frugalware"|"Mageia") labelcolor=$(getColor 'light cyan');;
+		"Mint"|"LMDE"|"openSUSE"|"LinuxDeepin"|"DragonflyBSD"|"Manjaro"|"Manjaro-tree"|"Android") labelcolor=$(getColor 'light green');;
+		"Ubuntu-3color"|"FreeBSD"|"Debian"|"Raspbian"|"BSD"|"Red Hat Linux"|"Peppermint"|"Cygwin"|"Fuduntu"|"NetBSD"|"Scientific Linux"|"DragonFlyBSD"|"BackTrack Linux") labelcolor=$(getColor 'light red');;
+		"CrunchBang"|"SolusOS"|"Viperr"|"elementary"*) labelcolor=$(getColor 'dark grey');;
+		"Gentoo"|"ParabolaGNU/Linux-libre"|"Funtoo"|"Funtoo-text") labelcolor=$(getColor 'light purple');;
+		"CentOS"|"Ubuntu"|*) labelcolor=$(getColor 'yellow');;
+	esac
+	[[ "$my_lcolor" ]] && labelcolor="${my_lcolor}"
+	if [[ "$no_color" == "1" ]]; then labelcolor=""; bold=""; c0=""; textcolor=""; fi
+	# Some verbosity stuff
+	[[ "$verbosity" == "1" ]] && [[ "$screenshot" == "1" ]] && verboseOut "Screenshot will be taken after info is displayed."
+	[[ "$verbosity" == "1" ]] && [[ "$hostshot" == "1" ]] && verboseOut "Screenshot will be transferred/uploaded to specified location."
+	#########################
+	# Info Variable Setting #
+	#########################
+	if [[ "${distro}" == "Android" ]]; then
+		myhostname=$(echo -e "${labelcolor}${hostname}"); out_array=( "${out_array[@]}" "$myhostname" )
+		mydistro=$(echo -e "$labelcolor OS:$textcolor $distro $distro_ver"); out_array=( "${out_array[@]}" "$mydistro" )
+		mydevice=$(echo -e "$labelcolor Device:$textcolor $device"); out_array=( "${out_array[@]}" "$mydevice" )
+		myrom=$(echo -e "$labelcolor ROM:$textcolor $rom"); out_array=( "${out_array[@]}" "$myrom" )
+		mybaseband=$(echo -e "$labelcolor Baseband:$textcolor $baseband"); out_array=( "${out_array[@]}" "$mybaseband" )
+		mykernel=$(echo -e "$labelcolor Kernel:$textcolor $kernel"); out_array=( "${out_array[@]}" "$mykernel" )
+		myuptime=$(echo -e "$labelcolor Uptime:$textcolor $uptime"); out_array=( "${out_array[@]}" "$myuptime" )
+		mycpu=$(echo -e "$labelcolor CPU:$textcolor $cpu"); out_array=( "${out_array[@]}" "$mycpu" )
+		mygpu=$(echo -e "$labelcolor GPU:$textcolor $cpu"); out_array=( "${out_array[@]}" "$mygpu" )
+		mymem=$(echo -e "$labelcolor RAM:$textcolor $mem"); out_array=( "${out_array[@]}" "$mymem" )
+	else
+		if [[ "${display[@]}" =~ "host" ]]; then myinfo=$(echo -e "${labelcolor}${myUser}$textcolor${bold}@${c0}${labelcolor}${myHost}"); out_array=( "${out_array[@]}" "$myinfo" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "distro" ]]; then
+			if [ "$distro" == "Mac OS X" ]; then
+				sysArch=`str1=$(ioreg -l -p IODeviceTree | grep firmware-abi);echo ${str1: -4: 2}bit`
+				prodVers=`prodVers=$(sw_vers|grep ProductVersion);echo ${prodVers:15}`
+				buildVers=`buildVers=$(sw_vers|grep BuildVersion);echo ${buildVers:14}`
+				if [ -n "$distro_more" ]; then mydistro=$(echo -e "$labelcolor OS:$textcolor $distro_more $sysArch")
+				else mydistro=$(echo -e "$labelcolor OS:$textcolor $sysArch $distro $prodVers $buildVers"); fi
+			elif [[ "$distro" == "Cygwin" ]]; then
+				distro=$(wmic os get name | head -2 | tail -1)
+				distro=$(expr match "$distro" '\(Microsoft Windows [A-Za-z0-9]\+\)')
+				sysArch=$(wmic os get OSArchitecture | head -2 | tail -1 | tr -d '\r ')
+				mydistro=$(echo -e "$labelcolor OS:$textcolor $distro $sysArch")
+			else
+				if [ -n "$distro_more" ]; then mydistro=$(echo -e "$labelcolor OS:$textcolor $distro_more")
+				else mydistro=$(echo -e "$labelcolor OS:$textcolor $distro $sysArch"); fi
+			fi
+			out_array=( "${out_array[@]}" "$mydistro" )
+			((display_index++))
+		fi
+		if [[ "${display[@]}" =~ "kernel" ]]; then mykernel=$(echo -e "$labelcolor Kernel:$textcolor $kernel"); out_array=( "${out_array[@]}" "$mykernel" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "uptime" ]]; then myuptime=$(echo -e "$labelcolor Uptime:$textcolor $uptime"); out_array=( "${out_array[@]}" "$myuptime" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "pkgs" ]]; then mypkgs=$(echo -e "$labelcolor Packages:$textcolor $pkgs"); out_array=( "${out_array[@]}" "$mypkgs" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "shell" ]]; then myshell=$(echo -e "$labelcolor Shell:$textcolor $myShell"); out_array=( "${out_array[@]}" "$myshell" ); ((display_index++)); fi
+		if [[ -n "$DISPLAY" ]]; then
+			if [[ "${display[@]}" =~ "res" ]]; then myres=$(echo -e "$labelcolor Resolution:${textcolor} $xResolution"); out_array=( "${out_array[@]}" "$myres" ); ((display_index++)); fi
+			if [[ "${display[@]}" =~ "de" ]]; then
+				if [[ "${DE}" != "Not Present" ]]; then
+					myde=$(echo -e "$labelcolor DE:$textcolor $DE"); out_array=( "${out_array[@]}" "$myde" ); ((display_index++))
+				fi
+			fi
+			if [[ "${display[@]}" =~ "wm" ]]; then mywm=$(echo -e "$labelcolor WM:$textcolor $WM"); out_array=( "${out_array[@]}" "$mywm" ); ((display_index++)); fi
+			if [[ "${display[@]}" =~ "wmtheme" ]]; then
+					if [[ "${Win_theme}" == "Not Present" ]]; then
+						:
+					else
+						mywmtheme=$(echo -e "$labelcolor WM Theme:$textcolor $Win_theme"); out_array=( "${out_array[@]}" "$mywmtheme" ); ((display_index++)); fi
+					fi
+			if [[ "${display[@]}" =~ "gtk" ]]; then
+				if [ "$distro" == "Mac OS X" ]; then
+					if [ "$gtkFont" != "Not Found" ]; then
+						if [ -n "$gtkFont" ]; then 
+							myfont=$(echo -e "$labelcolor Font:$textcolor $gtkFont"); out_array=( "${out_array[@]}" "$myfont" ); ((display_index++))
+						fi
+					fi
+				else
+					if [ "$gtk2Theme" != "Not Found" ]; then
+						if [ -n "$gtk2Theme" ]; then 
+							mygtk2="${gtk2Theme} [GTK2]"
+						fi
+					fi
+					if [ "$gtk3Theme" != "Not Found" ]; then
+						if [ -n "$mygtk2" ]; then 
+							mygtk3=", ${gtk3Theme} [GTK3]"
+						else
+							mygtk3="${gtk3Theme} [GTK3]"
+						fi
+					fi
+					mygtk=$(echo -e "$labelcolor GTK Theme:$textcolor ${mygtk2}${mygtk3}"); out_array=( "${out_array[@]}" "$mygtk" ); ((display_index++))
+					if [ "$gtkIcons" != "Not Found" ]; then
+						if [ -n "$gtkIcons" ]; then 
+							myicons=$(echo -e "$labelcolor Icon Theme:$textcolor $gtkIcons"); out_array=( "${out_array[@]}" "$myicons" ); ((display_index++))
+						fi
+					fi
+					if [ "$gtkFont" != "Not Found" ]; then
+						if [ -n "$gtkFont" ]; then 
+							myfont=$(echo -e "$labelcolor Font:$textcolor $gtkFont"); out_array=( "${out_array[@]}" "$myfont" ); ((display_index++))
+						fi
+					fi
+					# [ "$gtkBackground" ] && mybg=$(echo -e "$labelcolor BG:$textcolor $gtkBackground"); out_array=( "${out_array[@]}" "$mybg" ); ((display_index++))
+				fi
+			fi
+		elif [[ "$fake_distro" == "Cygwin" ]]; then
+			if [[ "${display[@]}" =~ "res" ]]; then myres=$(echo -e "$labelcolor Resolution:${textcolor} $xResolution"); out_array=( "${out_array[@]}" "$myres" ); ((display_index++)); fi
+			if [[ "${display[@]}" =~ "de" ]]; then
+				if [[ "${DE}" != "Not Present" ]]; then
+					myde=$(echo -e "$labelcolor DE:$textcolor $DE"); out_array=( "${out_array[@]}" "$myde" ); ((display_index++))
+				fi
+			fi
+			if [[ "${display[@]}" =~ "wm" ]]; then mywm=$(echo -e "$labelcolor WM:$textcolor $WM"); out_array=( "${out_array[@]}" "$mywm" ); ((display_index++)); fi
+			if [[ "${display[@]}" =~ "wmtheme" ]]; then
+				if [[ "${Win_theme}" == "Not Present" ]]; then
+					:
+				else
+					mywmtheme=$(echo -e "$labelcolor WM Theme:$textcolor $Win_theme"); out_array=( "${out_array[@]}" "$mywmtheme" ); ((display_index++))
+				fi
+			fi
+		fi
+		[[ "${fake_distro}" != "Cygwin" ]] && if [[ "${display[@]}" =~ "disk" ]]; then mydisk=$(echo -e "$labelcolor Disk:$textcolor $diskusage"); out_array=( "${out_array[@]}" "$mydisk" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "cpu" ]]; then mycpu=$(echo -e "$labelcolor CPU:$textcolor $cpu"); out_array=( "${out_array[@]}" "$mycpu" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "gpu" ]] && [[ "$gpu" != "Not Found" ]]; then mygpu=$(echo -e "$labelcolor GPU:$textcolor $gpu"); out_array=( "${out_array[@]}" "$mygpu" ); ((display_index++)); fi
+		if [[ "${display[@]}" =~ "mem" ]]; then mymem=$(echo -e "$labelcolor RAM:$textcolor $mem"); out_array=( "${out_array[@]}" "$mymem" ); ((display_index++)); fi
+	fi
+	if [[ "$display_type" == "ASCII" ]]; then
+		asciiText
+	else
+		if [[ "${display[@]}" =~ "host" ]]; then echo -e " $myinfo"; fi
+		if [[ "${display[@]}" =~ "distro" ]]; then echo -e "$mydistro"; fi
+		if [[ "${display[@]}" =~ "kernel" ]]; then echo -e "$mykernel"; fi
+		if [[ "${distro}" == "Android" ]]; then
+			echo -e "$mydevice"
+			echo -e "$myrom"
+			echo -e "$mybaseband"
+			echo -e "$mykernel"
+			echo -e "$myuptime"
+			echo -e "$mycpu"
+			echo -e "$mymem"
+		else
+			if [[ "${display[@]}" =~ "uptime" ]]; then echo -e "$myuptime"; fi
+			if [[ "${display[@]}" =~ "pkgs" ]]; then echo -e "$mypkgs"; fi
+			if [[ "${display[@]}" =~ "shell" ]]; then echo -e "$myshell"; fi
+			if [[ "${display[@]}" =~ "res" ]]; then echo -e "$myres"; fi
+			if [[ "${display[@]}" =~ "de" ]]; then
+				if [[ "${DE}" != "Not Present" ]]; then echo -e "$myde"; fi
+			fi
+			if [[ "${display[@]}" =~ "wm" ]]; then
+				echo -e "$mywm"
+				if [[ "${Win_theme}" != "Not Present" ]]; then
+					echo -e "$mywmtheme"
+				fi
+			fi
+			if [[ "${display[@]}" =~ "gtk" ]]; then
+				echo -e "$mygtk2"
+				echo -e "$mygtk3"
+				echo -e "$myicons"
+				echo -e "$myfont"
+			fi
+			if [[ "${display[@]}" =~ "disk" ]]; then echo -e "$mydisk"; fi
+			if [[ "${display[@]}" =~ "cpu" ]]; then echo -e "$mycpu"; fi
+			if [[ "${display[@]}" =~ "gpu" ]]; then echo -e "$mygpu"; fi
+			if [[ "${display[@]}" =~ "mem" ]]; then echo -e "$mymem"; fi
+		fi
+	fi
+}
+
+##################
+# Let's Do This!
+##################
+
+if [[ -f "$HOME/.screenfetchOR" ]]; then
+    source $HOME/.screenfetchOR
+fi
+
+
+if [[ "$overrideDisplay" ]]; then
+	[[ "$verbosity" -eq "1" ]] && verboseOut "Found 'd' flag in syntax. Overriding some display options..."
+	overrideDisplay=${overrideDisplay//,/ }
+	display=( $overrideDisplay )
+fi
+
+# Check for android
+#if type -p getprop >/dev/null 2>&1; then
+#	distro="Android"
+#	detectmem
+#	detectuptime
+#	detectkernel
+#	detectdroid
+#	infoDisplay
+#	exit 0
+#fi
+
+for i in "${display[@]}"; do
+	if [[ $i =~ wm ]]; then
+		 ! [[ $WM  ]] && detectwm;
+		 ! [[ $Win_theme ]] && detectwmtheme;
+	else
+		if [[ "${display[*]}" =~ "$i" ]]; then 
+			if [[ "$errorSuppress" == "1" ]]; then detect${i} 2>/dev/null
+			else 
+				exec 3> >(stderrOut)
+				detect${i} 2>&3
+				exec 3>&-
+			fi
+		fi
+	fi
+done
+
+infoDisplay
+[ "$screenshot" == "1" ] && takeShot
+[ "$exportTheme" == "1" ] && themeExport
+
+exit 0
