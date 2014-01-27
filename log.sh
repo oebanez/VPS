@@ -44,8 +44,8 @@ echo "-------------------------------------------"
 echo 
 echo 
 echo "-----------------------------------------------"
-echo "|		   LastOebanez Network		     |"
-echo "|		  Freedom of Information	     |"
+echo "|              LastOebanez Network             |"
+echo "|             Freedom of Information           |"
 echo "-----------------------------------------------"
 echo 
 echo 
