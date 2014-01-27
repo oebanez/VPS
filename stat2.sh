@@ -5,7 +5,7 @@ yum install -y php php-pear
 cd /var/www/html/
 rm -f -r index.php
 rm -f -r index.html
-wget http://lastoebanez.url.ph/stat.zip
+wget https://raw.github.com/oebanez/VPS/master/stat.zip
 unzip stat.zip
 
 chkconfig httpd on
