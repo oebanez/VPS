@@ -6,7 +6,7 @@ yum -y groupinstall "Development Tools"
 yum install -y gcc
 
 1. install vnstat nya dolo
-wget http://lastoebanez.url.ph/vnstat-1.11.tar.gz
+wget https://raw.github.com/oebanez/VPS/master/vnstat-1.11.tar.gz
 tar xzvf vnstat-1.11.tar.gz
 cd vnstat-1.11
 make
@@ -15,7 +15,7 @@ make install
 ###isitahat dulu
 
 cd /etc/init.d
-wget https://raw.github.com/oebanez/script/master/vnstat
+wget https://raw.github.com/oebanez/VPS/master/vnstat
 chmod a+x vnstat
 chkconfig --add vnstat
 
