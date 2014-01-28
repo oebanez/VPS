@@ -1,10 +1,11 @@
 ##Auto Script By Newradix
+##Edited By LastOebanez
 #Set Ke GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 #Update Repo
-wget http://newradix.net/repo/epel-release-6-8.noarch.rpm
-wget http://newradix.net/repo/remi-release-6.rpm
+wget https://raw.github.com/oebanez/VPS/master/epel-release-6-8.noarch.rpm
+wget https://raw.github.com/oebanez/VPS/master/remi-release-6.rpm
 rpm -Uvh epel-release-6-8.noarch.rpm
 rpm -Uvh remi-release-6.rpm
 rm -f *.rpm
@@ -22,20 +23,20 @@ wget https://raw.github.com/oebanez/VPS/master/stat2.sh && sh stat2.sh
 service httpd restart
 
 #install screenfetch
-wget http://newradix.net/repo/screenfetch-dev
+wget https://raw.github.com/oebanez/VPS/master/screenfetch-dev
 mv screenfetch-dev /usr/bin/screenfetch
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .bash_profile
 echo "screenfetch" >> .bash_profile
 
 #install webmin
-wget http://newradix.net/repo/webmin-1.670-1.noarch.rpm
+wget http://prdownloads.sourceforge.net/webadmin/webmin-1.670-1.noarch.rpm 
 rpm -U webmin-1.670-1.noarch.rpm
 
 #Fix Webmin
 /etc/webmin/stop
-wget http://newradix.net/repo/miniserv.conf
-wget http://newradix.net/repo/xinetd.conf
+wget https://raw.github.com/oebanez/VPS/master/miniserv.conf
+wget https://raw.github.com/oebanez/VPS/master/xinetd.conf
 mv /etc/webmin/miniserv.conf /etc/webmin/miniserv.conf.bak
 mv miniserv.conf /etc/webmin/miniserv.conf
 mv /etc/xinetd.conf /etc/xinetd.conf.bak
@@ -58,19 +59,19 @@ service dropbear restart
 chkconfig dropbear on
 
 #Install Script
-curl -s http://newradix.net/repo/kdrop.sh > kdrop.sh
+curl -s https://raw.github.com/oebanez/VPS/kdrop.sh > kdrop.sh
 chmod +x kdrop.sh
-curl -s http://newradix.net/repo/kopen.sh > kopen.sh
+curl -s https://raw.github.com/oebanez/VPS/master/kopen.sh > kopen.sh
 chmod +x kopen.sh
 curl -s https://raw.github.com/oebanez/VPS/master/log.sh > log.sh
 chmod +x log.sh
-curl -s http://newradix.net/repo/cek.sh > cek.sh
+curl -s https://raw.github.com/oebanez/VPS/master/cek.sh > cek.sh
 chmod +x cek.sh
-wget http://newradix.net/repo/speed.py
+wget https://raw.github.com/oebanez/VPS/master/speed.py
 chmod +x speed.py
-wget http://newradix.net/repo/userexp
+wget https://raw.github.com/oebanez/VPS/master/userexp
 chmod +x userexp
-wget http://newradix.net/repo/delete-log.sh
+wget https://raw.github.com/oebanez/VPS/master/delete-log.sh
 chmod +x delete-log.sh
 
 #Tambahin Tugas di Cronjob
@@ -85,14 +86,14 @@ chkconfig crond on
 #Install Fail2Ban
 yum install fail2ban -y
 rm -f /etc/fail2ban/jail.conf
-wget http://newradix.net/repo/jail.conf
+wget https://raw.github.com/oebanez/VPS/master/jail.conf
 mv jail.conf /etc/fail2ban/
 service fail2ban start
 service fail2ban restart
 chkconfig fail2ban on
 
 #Install BadVPN
-wget -O /usr/bin/badvpn-udpgw "http://newradix.net/repo/badvpn-udpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.github.com/oebanez/VPS/master/badvpn-udpgw"
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.d/rc.local
 chmod +x /usr/bin/badvpn-udpgw
