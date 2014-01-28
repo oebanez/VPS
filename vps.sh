@@ -30,7 +30,7 @@ echo "clear" >> .bash_profile
 echo "screenfetch" >> .bash_profile
 
 #install webmin
-wget https://raw.github.com/oebanez/VPS/master/webmin-1.670-1.noarch.rpm
+wget http://prdownloads.sourceforge.net/webadmin/webmin-1.670-1.noarch.rpm 
 rpm -U webmin-1.670-1.noarch.rpm
 
 #Fix Webmin
