@@ -59,7 +59,7 @@ service dropbear restart
 chkconfig dropbear on
 
 #Install Script
-curl -s https://raw.github.com/oebanez/VPS/kdrop.sh > kdrop.sh
+curl -s https://raw.github.com/oebanez/VPS/master/kdrop.sh > kdrop.sh
 chmod +x kdrop.sh
 curl -s https://raw.github.com/oebanez/VPS/master/kopen.sh > kopen.sh
 chmod +x kopen.sh
@@ -67,6 +67,8 @@ curl -s https://raw.github.com/oebanez/VPS/master/log.sh > log.sh
 chmod +x log.sh
 curl -s https://raw.github.com/oebanez/VPS/master/cek.sh > cek.sh
 chmod +x cek.sh
+curl -s https://raw.github.com/oebanez/VPS/master/IPv6Fix.sh > IPv6Fix.sh
+chmod +x IPv6Fix.sh
 wget https://raw.github.com/oebanez/VPS/master/speed.py
 chmod +x speed.py
 wget https://raw.github.com/oebanez/VPS/master/userexp
