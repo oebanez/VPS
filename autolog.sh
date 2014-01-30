@@ -1,6 +1,6 @@
 ##Auto Script By Newradix
 #Install Script
-curl -s https://raw.github.com/oebanez/VPS/master/coba.sh > coba
+curl -s https://raw.github.com/oebanez/VPS/master/coba.sh > coba.sh
 chmod +x coba.sh
 
 #Tambahin Tugas di
